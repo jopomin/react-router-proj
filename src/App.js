@@ -4,6 +4,7 @@ import Home from './components/Home'
 import Bio from './components/Bio'
 import Contacts from './components/Contacts'
 import Navbar from './components/Navbar'
+import Post from './components/Post'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route exact path='/' component={Home} />
         <Route exact path='/bio' component={Bio} />
         <Route exact path='/contacts' component={Contacts} />
+        <Route exact path='/::Id' component={Post} />
       </div>
     </Router>
   )
